@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:text="@string/Cymbal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Cymbal"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_alignBaseline="@+id/HiHat"
+        android:layout_alignBottom="@+id/HiHat"
+        android:layout_alignRight="@+id/cymbal"
+        android:layout_alignEnd="@+id/cymbal"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hihat"
+        android:id="@+id/hihat"
+        android:contentDescription="@string/HiHat"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/HiHat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:text="@string/Snare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Snare"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_alignBaseline="@+id/Bass"
+        android:layout_alignBottom="@+id/Bass"
+        android:layout_alignRight="@+id/cymbal"
+        android:layout_alignEnd="@+id/cymbal"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/drum"
+        android:id="@+id/bass"
+        android:contentDescription="@string/Bass"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/snare"
+        android:layout_alignLeft="@+id/Bass"
+        android:layout_alignStart="@+id/Bass"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cymbals"
+        android:id="@+id/cymbal"
+        android:contentDescription="@string/Cymbal"
+        android:layout_alignTop="@+id/hihat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:text="@string/Bass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bass"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/hihat"
+        android:layout_alignLeft="@+id/hihat"
+        android:layout_alignStart="@+id/hihat" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/snare"
+        android:id="@+id/snare"
+        android:contentDescription="@string/Snare"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/Snare"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:text="@string/HiHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HiHat"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_marginTop="47dp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/hihat"
+        android:layout_alignStart="@+id/hihat" />
+
+</RelativeLayout>
+

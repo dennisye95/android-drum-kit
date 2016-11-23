@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Drum\nKit</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+    <string name="red">red</string>
+    <string name="yellow">yellow</string>
+    <string name="HiHat">Hi-Hat</string>
+    <string name="Snare">Snare</string>
+    <string name="Bass">Bass</string>
+    <string name="Cymbal">Cymbal</string>
+</resources>
